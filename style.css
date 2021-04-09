@@ -1,6 +1,77 @@
 h1 {
     color: red;
 }
-h2{
-    color: rgb(21, 255, 0);
+h2 {
+color: black;
 }
+/*général : changement de couleur sur le lien au passage de la souris*/
+a:hover
+{
+    color:chartreuse;
+}
+
+#bloc_page
+{
+    margin: auto;
+   width: 960px;
+}
+
+
+/*header du site*/
+header
+{
+    background-color: khaki;
+    width: 950px;
+}
+
+#nav ul
+{
+flex-direction: row;
+justify-content: flex-end;
+}
+
+/*mise en forme conteneur_1*/
+#section_1
+{
+    width:950px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-content: space-between;
+ 
+}
+
+.element:nth-child(1)
+{
+    width: 700px;
+    height:400px;
+    background-color: rgba(202, 201, 201, 0.808);
+}
+.element:nth-child(2)
+{
+    width: 240px;
+    height: 400px;
+    background-color: rgba(202, 201, 201, 0.808);
+}
+
+/*fin de mise en forme conteneur_1*/
+/*mise en forme conteneur_2*/
+
+/*mise en forme conteneur_3*/
+#section_2
+{
+    width: 950px;
+    height: 400px;
+    background-color: rgba(202, 201, 201, 0.808);
+  
+
+}
+ 
+footer
+{
+    background-color: lightgreen;
+    width: 950px;
+
+}
+/*fin de mise en forme conteneur_3*/ 
