@@ -10,7 +10,7 @@ a:hover
     color:chartreuse;
 }
 
-#bloc_page
+body
 {
     margin: auto;
    width: 960px;
@@ -21,7 +21,7 @@ a:hover
 header
 {
     background-color: khaki;
-    width: 950px;
+    width: 980px;
 }
 
 #nav ul
@@ -31,47 +31,78 @@ justify-content: flex-end;
 }
 
 /*mise en forme conteneur_1*/
-#section_1
+#section_a
 {
-    width:950px;
+    width:980px;
     height: 400px;
     display: flex;
-    align-items: center;
+
     justify-content:space-between;
     align-content: space-between;
- 
+
+
 }
 
-.element:nth-child(1)
-{
-    width: 700px;
-    height:400px;
-    background-color: rgba(202, 201, 201, 0.808);
-}
-.element:nth-child(2)
-{
-    width: 240px;
-    height: 400px;
-    background-color: rgba(202, 201, 201, 0.808);
-}
+                #conteneur_1
+                {
+                    width: 700px;
+                    height:400px;
+                    background-color: rgba(202, 201, 201, 0.808);
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-content: space-around;
+                
+                }
+                        .texte_conteneur_1
+                        {
+                            width: 700px;
+                            height: auto;
+                            color: rgba(17, 17, 19, 0.986);
+                        }
+                        .element_1
+                        {
+                            width: 200px;
+                            height:120px;
+                            background-color: rgba(235, 17, 17, 0.808);
+                        }
 
+
+
+                #conteneur_2
+                {
+                    width: 250px;
+                    height: 400px;
+                    background-color: rgba(202, 201, 201, 0.808);               
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-content:space-around;
+                    justify-content: space-around;
+
+                }
+                        .element_2
+                        {
+                            width: 200px;
+                            height:100px;
+                            background-color: rgba(187, 197, 45, 0.808);
+                        }
 /*fin de mise en forme conteneur_1*/
-/*mise en forme conteneur_2*/
+
 
 /*mise en forme conteneur_3*/
-#section_2
+#section_b
 {
-    width: 950px;
+    width: 980px;
     height: 400px;
     background-color: rgba(202, 201, 201, 0.808);
-  
-
 }
  
 footer
 {
     background-color: lightgreen;
-    width: 950px;
+    width: 980px;
 
 }
 /*fin de mise en forme conteneur_3*/ 
