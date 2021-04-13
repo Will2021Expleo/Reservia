@@ -1,27 +1,37 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/f00dd8d0c9.js" crossorigin="anonymous"></script>
     <title>Reservia : Trouvez votre hébergement pour des vacances de rêve!</title>
 </head>
-<body>
-    <div id="bloc_page">
+<body id="bloc_page">
+    
 <!--Header-->
 <header>
-    <nav>
-        <ul>
-            <li><a href="http:..">lien 1</a></li>
-            <li><a href="http:..">lien 2</a></li>
-            <li><a href="http:..">lien 3</a></li>
-        </ul>   
+    <nav class="menu">
+        <div class="inner">
+            <div class="m-left">
+                <img class="logo" src="Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="Reservia" />
+            </div> 
+            
+            <div class="m-right">
+                <a href="#" class="link">Hébergements</a>
+                <a href="#" class="link">Activités</a>
+                <a href="#" class="link">S'inscrire</a>
+            </div>
+        </div>
     </nav>
 </header>
+
+
+
 <section>
-    <p>Trouvez votre hébergement pour des vacances de rêve <br>
-    En plein centre ville ou en pleine nature</p>
+    <h3>Trouvez votre hébergement pour des vacances de rêve </h3>
+    <p>En plein centre ville ou en pleine nature</p>
         <!--formulaire de saisie pour une recherche de lieu de vacances-->
         <form method="post" action="traitement.php">
             <p>
@@ -33,68 +43,253 @@
          </form>
        <!--fin formulaire-->
 </section>
+
+
+<!-- Filtres -->
+                    <section class="Filtres">
+                    
+                            <div class="search-filters">
+                                    <h3 class="filter-title">Filtres</h3>
+                                    
+                                    <div class="filter"><i class="fas fa-money-bill-wave"></i> Economique</div> 
+                                    
+
+                                    <div class="filter"><i class="fas fa-child"></i> Famillial</div>
+
+                                    <div class="filter"><i class="fas fa-heart"></i> Romantique</div>
+
+                                    <div class="filter"><i class="fas fa-dog"></i> Animaux autorisés</div>
+                                
+                            </div>
+                        
+                    </section>  
+
+
+
+
+
+
 <!--Fin header-->
 
                     <!--Début section 1 : hébergements mis en avant-->
                     <section id="section_a">
                         <!--Début section 1 : hébergements mis en avant-->
-                        <div id="conteneur_1">
-                            <div class="texte_conteneur_1">conteneur 1</div>
-                            <div class="element_1">Element 1</div>
-                            <div class="element_1">Element 2</div>
-                            <div class="element_1">Element 3</div>
-                            <div class="element_1">Element 1</div>
-                            <div class="element_1">Element 2</div>
-                            <div class="element_1">Element 3</div>
+                        <div id="bloc_hebergements_general">
+                            <div class="bloc_hebergements">
+                                            <div class="bloc_texte_conteneur_haut">
+                                                <div class="texte_conteneur_haut">
+                                                    <h3>Hébergements à Marseille</h3>
+                                                </div>
+                                            </div>
 
-                        <!--Fin hébergements mis en avant-->  
+                                            <div class="conteneur_element_1">
+                                                <div class="element_1">
+                                                        <div class="article">
+                                                            <div class="image_hebergement">
+                                                                <img src="img/hebergements/auberge-de-la-cannebiere.jpg" title="Auberge la Cannebiere">
+                                                            </div>
+                                                            
+                                                            <p class="hotel_name">Auberge de la Cannebiere</p>
+                                                            <p class="hotel_price">Nuit à partir de 25€</p>
+                                                            <div class="hotel_notation">(Note hotel)</div>
+                                                        </div>
+                                                </div>
+
+                                                <div class="element_1">
+                                                    <div class="article">
+                                                        <img class="image_hebergement" src="img/hebergements/hotel-du-port.jpg" title="Hotel du port">
+                                                        <p class="hotel_name">Hotel du port</p>
+                                                        <p class="hotel_price">Nuit à partir de 52€</p>
+                                                        <div class="hotel_notation">(Note hotel)</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="element_1">
+                                                    <div class="article">
+                                                        <img class="image_hebergement" src="img/hebergements/hotel-les-mouettes.jpg" title="Hotel les mouettes">
+                                                        <p class="hotel_name">Hotel Les mouettes</p>
+                                                        <p class="hotel_price">Nuit à partir de 76€</p>
+                                                        <div class="hotel_notation">(Note hotel)</div>
+                                                    </div>
+                                                </div>
+                                                <div class="element_1">
+                                                    <div class="article">
+                                                        <img class="image_hebergement" src="img/hebergements/hotel-de-la-mer.jpg" title="Hotel de la mer">
+                                                        <p class="hotel_name">Hotel de la mer</p>
+                                                        <p class="hotel_price">Nuit à partir de 46€</p>
+                                                        <div class="hotel_notation">(Note hotel)</div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="element_1">
+                                                    <div class="article">
+                                                        <img class="image_hebergement" src="img/hebergements/auberge-le-panier.jpg" title="Auberge le panier">
+                                                        <p class="hotel_name">Auberge le panier</p>
+                                                        <p class="hotel_price">Nuit à partir de 23€</p>
+                                                        <div class="hotel_notation">(Note hotel)</div>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="element_1">
+                                                    <div class="article">
+                                                        <img class="image_hebergement" src="img/hebergements/hotel-chez-amina.jpg" title="Hotel chez Amina">
+                                                        <p class="hotel_name">Hotel chez Amina</p>
+                                                        <p class="hotel_price">Nuit à partir de 96€</p>
+                                                        <div class="hotel_notation">(Note hotel)</div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                           
+                            
+                                            
+                                        <div class="bloc_texte_conteneur_bas">
+                                            <div class="texte_conteneur_bas">
+                                                <h3>Afficher plus</h3>
+                                            </div>
+                                        </div>
+                            </div>
+                                            
+                                         
                         </div>
+                         <!--Fin hébergements mis en avant--> 
+                        
+
                         <!--Les plus populaires-->
-                        <div id="conteneur_2">Boite n°2
-                            <div class="element_2">Element 1</div>
-                            <div class="element_2">Element 2</div>
-                            <div class="element_2">Element 3</div> 
+                        <div id="bloc_populaires_general">
+                            <div class="bloc_populaires">
+                                <div class="bloc_texte_conteneur_populaires">
+                                    <div class="texte_populaires">
+                                        <h3>Les plus populaires</h3>
+                                    </div>
+                                </div>
+                        
+                                <div class="conteneur_element_2">
+                                    <div class="element_2">
+                                            <div class="article_populaire">
+                                                <img class="image_element_populaire" src="Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" title="Auberge la Cannebiere">
+                                                <div class="detail_hotel">
+                                                <p class="hotel_name">Auberge de la Cannebiere</p>
+                                                <p class="hotel_price">Nuit à partir de 25€</p>
+                                                <div class="hotel_notation">(Note hotel)</div>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="element_2">
+                                        <div class="article_populaire">
+                                            <img class="image_element_populaire" src="Projet 2 - Reservia\images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" title="Hotel du port">
+                                            <div class="detail_hotel">
+                                            <p class="hotel_name">Hotel du port</p>
+                                            <p class="hotel_price">Nuit à partir de 52€</p>
+                                            <div class="hotel_notation">(Note hotel)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="element_2">
+                                        <div class="article_populaire">
+                                            <img class="image_element_populaire" src="Projet 2 - Reservia\images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" title="Hotel les mouettes">
+                                                <div class="detail_hotel">
+                                                    <p class="hotel_name">Hotel Les mouettes</p>
+                                                    <p class="hotel_price">Nuit à partir de 76€</p>
+                                                    <div class="hotel_notation">(Note hotel)</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!--Fin : Les plus populaires-->
 
                      </section>
 
-                <br>
+
 
                 <section id="section_b">
                     <!--Les activités-->
                     <div>Section 3</div>
                     <!--fin : les activités-->
-                    
-                </section>
 
+                    <div class="bloc_activity">
+                            <div class="texte_bloc_activity">
+                                <h3>Activités à Marseille</h3>
+                            </div>
+                            <div class="bloc_principal_article"> <!--1 image-->
+                                    <div class="bloc_1_article_activity">
+                                        <div class="image_bloc_1_article_activity">
+                                            Grande Image
+                                        </div>
+                                        <p class="texte_image">description</p>
+                                    </div>
+                                    <div class="bloc_2_article_activity">
+                                            <div class="bloc_2_article_1">
+                                                <div class="image_bloc_2_article_1_activity">
+                                                Petite image
+                                                </div>
+                                                <p class="texte_image">description</p>
+                                            </div>
+                                            <div class="bloc_2_article_2">
+                                                <div class="image_bloc_2_article_2_activity">
+                                                Petite image
+                                                </div>
+                                                <p class="texte_image">description</p>
+                                            </div>
+                                    </div>
+                                    <div class="bloc_3_article_activity">
+                                        <div class="image_bloc_3_article_activity">
+                                            Grande Image
+                                        </div>
+                                        <p class="texte_image">description</p>
+                                    </div>
+                                    <div class="bloc_4_article_activity">
+                                            <div class="bloc_4_article_1">
+                                                <div class="image_bloc_4_article_1_activity">
+                                                Petite image
+                                                </div>
+                                                <p class="texte_image">description</p>
+                                            </div>
+                                            <div class="bloc_4_article_2">
+                                                <div class="image_bloc_4_article_2_activity">
+                                                Petite image
+                                                </div>
+                                                <p class="texte_image">description</p>
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>         
+                  </section>
 
-<br>
 
 <!--Footer-->
-<footer>
-    <table>
-        <tr>
-            <th><h5>A propos</h5></th>
-            <th><h5>Nos hébergements</h5</th>
-            <th><h5>Asistance</h5></th>
-        </tr>
-   
-   
-        <tr>
-            <tr></tr>
-        </td>
-        <td>
-            <tr></tr>
-        </td>  
-        <td>
-            <tr> </tr>
-        </td>  
-   
-    </table>
+            <footer>
+                <div class="contenu-footer">
+                        <div class="bloc_a_propos">
+                            <h3>A Propos</h3>
+                                <ul class="liste_a_propos">
+                                    <li><a href="#" class="link"> Fonctionnement du site</a></li>
+                                    <li><a href="#" class="link"> Conditions générales de ventes</a></li>
+                                    <li><a href="#" class="link"> Données et confidentialité</a></li>
+                                </ul>
+                        </div>
+                
+                        <div class="bloc_hebergements">
+                            <h3>Nos hébergements</h3>
+                                <ul class="liste_hebergements">
+                                    <li><a href="#" class="link"> Charte qualité</a></li>
+                                    <li><a href="#" class="link"> Soumettre votre hôtel</a></li>
+                                </ul>
+                        </div>
 
+                      
+                        <div class="bloc_assistance">
+                            <h3>Assistance</h3>
+                                <ul class="liste_assistance">
+                                    <li><a href="#" class="link"> Charte qualité</a></li>
+                                    <li><a href="#" class="link"> Soumettre votre hôtel</a></li>
+                                </ul>
+                        </div>
+                </div>
+            </footer>
 
-</footer>
-</div>
 </body>
 </html>
