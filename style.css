@@ -5,7 +5,7 @@
 /*paramètres de survol des liens du site*/
 a:hover
 {
-   border-bottom: 2px solid #0065FC;
+   border-bottom: 1px solid #0065FC;
 }
 
 /*paramètres des infos dans le corps du site*/
@@ -13,7 +13,13 @@ body
 {
   background-color: white; /*couleur de fond*/
   font-family: 'Raleway';    /*police*/
+  width: 80%;
 
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
 }
 
 
@@ -23,42 +29,42 @@ body
     width: 95%; /*95% de 100% de la zone*/
   
 }
-.menu{
+header{
     background-color: burlywood;
     width: 100%;
     height: auto;
     padding: 0;
     display: flex;
     align-items: center;
- 
-    
-    
+    margin-bottom: 15px;
+    order: 1; 
 }
-.link{
-    text-decoration: none;
-    color: #0065FC;
-    padding: 15px; margin: 0;
-
-}
-.logo{ /*redimmensionnement du logo en conservant les proportions*/
-    max-width: 25%;
-    height: auto;
-    padding: 0; margin: 0;
-}
-.m-left{ /*position du logo à gauche*/
-    float: left;
-    max-width: 100%;
-    height: auto;
-}
-.m-right{ /*position du menu à droite*/
-    float: right;
-    display: inline;
-    align-items: center;
-}
+        .link{
+            text-decoration: none;
+            color: #0065FC;
+            padding: 5px; margin: 0;
+            }
+        .link :hover{
+            border-top: 1px solid #0065FC;
+        }
+        .logo{ /*redimmensionnement du logo en conservant les proportions*/
+            max-width: 25%;
+            height: auto;
+            padding: 0; margin: 0;
+        }
+        .m-left{ /*position du logo à gauche*/
+            float: left;
+            max-width: 100%;
+            height: auto;
+        }
+        .m-right{ /*position du menu à droite*/
+            float: right;
+            display: inline;
+            align-items: center;
+        }
 .search-filters{
     display: flex;
     align-items: center;
-
 }
 .filter{
     margin: 25px;
@@ -75,7 +81,12 @@ body
     background-color: #DEEBFF;
     padding: 0;
 }
-
+#section_1{
+    order: 2;
+    background-color: cadetblue;
+    margin-bottom: 15px;
+    width: 100%;
+}
 /*mise en forme conteneur_1*/
 #section_a
 {
@@ -153,40 +164,36 @@ margin-bottom: 15px;
                                                     border: 1px solid black;
                                                      border-top-left-radius: 15px; 
                                                      border-top-right-radius: 15px;
-                                                     background-size: cover;
-                                                     max-width: 100%;
-                                                     max-height: 10%;
-                                                     
+                                                     width: 100%;
+                                                     height: 10em;
+                                                     object-fit: cover;                                                  
                                                      }
                                                      
                                                     .hotel_name{
                                                         background-color: cornsilk;
-                                                    width: 100%;
+                                                    max-width: 100%;
                                                     margin: 0.5rem;                                                
                                                     }
                                                     .hotel_price{
                                                         background-color: cyan;
-                                                    width: 100%;
-                                                    margin: 0.5rem;
-                                                    }
-                                                    .hotel_notation{
-                                                        background-color: darkorange;
                                                     max-width: 100%;
                                                     margin: 0.5rem;
-                                                    display: flex;
-                                                    align-items: flex-end;
+                                                    }
+                                                    .hotel_evaluation{
+                                                        background-color: darkorange;
+                                                        max-width: 100%;
+                                                        margin: 0.5rem;
+
                                                     }
 
 
 
                           
 
-                            .bloc_texte_conteneur_bas
-                                {
+                            .bloc_texte_conteneur_bas{
                                 width: 100%;
                                 height: auto;
                                 padding: 0px;
-                                
                                 margin: 0px;
                                 display: flex;
                                 }
@@ -212,7 +219,7 @@ margin-bottom: 15px;
             border-radius: 3%;
             padding: 1%; 
             }
-                    .bloc_populaires
+                    .bloc_populaires_1
                         {
                         width: 100%;
                         display: flex;
@@ -267,20 +274,23 @@ margin-bottom: 15px;
                                                                 .article_populaire{
                                                                     background-color: violet;
                                                                     max-width: 100%;
+                                                                    height: 10em;
                                                                     margin: 10px;
                                                                     padding: 5px;
                                                                     display: flex;
                                                                     
                                                                 }
                                                                     .image_element_populaire{
-                                                                        max-width: 35%;
-                                                                        max-height: auto;
+                                                                       
                                                                         background-color: turquoise;
                                                                        margin-right: 15px;
                                                                         padding: 0px;
                                                                         border: 1px solid yellow;
                                                                         border-top-left-radius: 10px;
                                                                         border-bottom-left-radius: 10px;
+                                                                        width: 10em;
+                                                                        height: 80%;
+                                                                        object-fit: cover;
                                                                     }
                                                                         .detail_hotel{
                                                                             background-color: yellowgreen;
@@ -299,6 +309,133 @@ margin-bottom: 15px;
 
 
 /*mise en forme bloc activités*/
+#section_2{
+    order : 3;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.bloc_hergements{
+    width: 70%;
+    background-color: crimson;
+    margin:2px;
+    padding: 1px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+.bloc_texte_hebergements{
+    background-color: chartreuse;
+    max-width: 100%;
+    margin: 1px;
+    padding: 0;
+    border: 1px solid black;
+}
+.bloc_hotel_description_hebergements{
+    background-color: black;
+    max-width: 100%;
+   margin: 1px;
+    padding: 1px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around ;
+}
+.bloc_description_detail_hebergements{
+    background-color: cornflowerblue;
+    max-width: 30%;
+    margin: 5px;
+    padding: 1px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.image_hebergement{
+    margin: 5px;
+    border: 1px solid black;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+    max-width: 100%;
+    height: 8em;
+    object-fit: cover;
+}
+
+
+
+
+.bloc_texte_detail_hebergements{
+background-color: darkred;
+margin: 2px;
+padding: 1px;
+
+}
+    
+.bloc_populaires{
+    width: 30%;
+    background-color: blue;
+    margin: 5px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.bloc_texte_haut_populaire{
+background-color: burlywood;
+max-width: 100%;
+margin: 2px;
+padding: 1px;
+border: 1px solid black;
+}
+
+.bloc_description_article_populaires{
+   
+    max-width: auto;
+    max-height: 100%;
+    margin: 2px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image_element_populaire{                                                                       
+ 
+    border: 1px solid black;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    width: 80%;
+    height: 8em;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.bloc_detail_populaires{
+    background-color: cyan;
+    width: 100%;
+    margin: 2px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#section_3{
+    order: 4;
+    background-color: chartreuse;
+    margin-bottom: 5px;
+}
 .bloc_activity{   
     width: 100%;
     height: auto;
@@ -330,8 +467,16 @@ margin-bottom: 15px;
                                 .image_bloc_1_article_activity{
                                     background-color: darkslateblue;
                                     max-width: 100%;
+                                    height: 100%;
                                     margin: 5px;
+                                    object-fit: cover;
                                 }
+
+
+
+
+
+
                                 .texte_image{
                                     background-color: darkturquoise;
                                     max-width: 100%;
@@ -354,7 +499,9 @@ margin-bottom: 15px;
                                         .image_bloc_2_article_1_activity{
                                             background-color:green;
                                             max-width: 100%;
+                                            height: 10em;
                                             margin: 5px;
+                                            object-fit: cover;
                                         }
 
                                 .bloc_2_article_2{
@@ -367,7 +514,9 @@ margin-bottom: 15px;
                                         .image_bloc_2_article_2_activity{
                                             background-color:green;
                                             max-width: 100%;
+                                            height: 10em;
                                             margin: 5px;
+                                            object-fit: cover;
                                         }
 
                         .bloc_3_article_activity{
@@ -380,7 +529,9 @@ margin-bottom: 15px;
                                                 .image_bloc_3_article_activity{
                                                     background-color: darkslateblue;
                                                     max-width: 100%;
+                                                    height: 100%;
                                                     margin: 5px;
+                                                    object-fit: cover;
                                                 }
 
                         .bloc_4_article_activity{
@@ -400,7 +551,9 @@ margin-bottom: 15px;
                                                         .image_bloc_4_article_1_activity{
                                                             background-color:green;
                                                             max-width: 100%;
+                                                            height: 10em;
                                                             margin: 5px;
+                                                            object-fit: cover;
                                                         }
                 
                                                 .bloc_4_article_2{
@@ -413,7 +566,9 @@ margin-bottom: 15px;
                                                         .image_bloc_4_article_2_activity{
                                                             background-color:green;
                                                             max-width: 100%;
+                                                            height: 10em;
                                                             margin: 5px;
+                                                            object-fit: cover;
                                                         }
 
 
@@ -421,6 +576,7 @@ margin-bottom: 15px;
 /*mise en forme du footer*/
 footer
 {
+    order: 5;
     background-color:#F2F2F2;
     width: 100%;
     flex-direction: row;
@@ -430,6 +586,7 @@ footer
     .contenu-footer
     {
     Margin: 0 auto;
+    padding: 2px;
     display: flex;
     justify-content:flex-start;
     align-items: flex-start;
@@ -440,8 +597,10 @@ footer
         .bloc_assistance
         {
             width: auto;
-            margin-right: 10%;
-            margin-left: 2%;
+            margin-right: 20px;
+            margin-left: 2px;
+            padding: auto;
+           
         }
         
 
