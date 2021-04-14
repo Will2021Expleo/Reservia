@@ -1,12 +1,12 @@
-
 /*général : changement de couleur sur le lien au passage de la souris*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
 
-/*paramètres de survol des liens du site*/
-a:hover
-{
-   border-bottom: 1px solid #0065FC;
+@media only screen and (max-width: 880px){
+    body{background-color: chartreuse;}
 }
+
+/*paramètres de survol des liens du site*/
+
 
 /*paramètres des infos dans le corps du site*/
 body
@@ -15,7 +15,7 @@ body
   font-family: 'Raleway';    /*police*/
   width: 80%;
 
-  margin-top: 5px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,44 +24,63 @@ body
 
 
 /*paramètres des éléments dans le header*/
-.inner{
-    
-    width: 95%; /*95% de 100% de la zone*/
-  
-}
+
 header{
-    background-color: burlywood;
+    
     width: 100%;
     height: auto;
     padding: 0;
-    display: flex;
-    align-items: center;
+
     margin-bottom: 15px;
     order: 1; 
 }
+
+        .menu{
+
+            width: 100%;
+            height: 66px;
+            line-height: 66px;
+        }
+
+        .link_main a:hover{
+            border-top: 1px solid #0065FC;
+            padding: 30px;
+        }
+        .logo{ /*redimmensionnement du logo en conservant les proportions*/
+            
+            max-width: 100%;
+            height: auto;
+            padding: 0; margin: 0;
+            float: left;
+
+
+        }
+
+        .link_main{
+            text-decoration: none;
+         
+            padding: 0; 
+            margin: 0;
+            
+            float: right;
+            max-width: 100%;
+
+            }
+
         .link{
             text-decoration: none;
             color: #0065FC;
-            padding: 5px; margin: 0;
-            }
-        .link :hover{
-            border-top: 1px solid #0065FC;
+            font-weight: 500;
+            padding: 15px;
+
         }
-        .logo{ /*redimmensionnement du logo en conservant les proportions*/
-            max-width: 25%;
-            height: auto;
-            padding: 0; margin: 0;
-        }
-        .m-left{ /*position du logo à gauche*/
-            float: left;
-            max-width: 100%;
-            height: auto;
-        }
-        .m-right{ /*position du menu à droite*/
-            float: right;
-            display: inline;
-            align-items: center;
-        }
+/* Section 1 du site*/
+#section_1{
+    order: 2;
+    background-color: cadetblue;
+    margin-bottom: 15px;
+    width: 100%;
+}
 .search-filters{
     display: flex;
     align-items: center;
@@ -81,234 +100,8 @@ header{
     background-color: #DEEBFF;
     padding: 0;
 }
-#section_1{
-    order: 2;
-    background-color: cadetblue;
-    margin-bottom: 15px;
-    width: 100%;
-}
-/*mise en forme conteneur_1*/
-#section_a
-{
-display: flex;
-margin-bottom: 15px;
-}
 
-            #bloc_hebergements_general
-            {width: 70%;
-                background-color: #F2F2F2;
-            height: auto;
-             display: flex;
-             justify-content: space-around;
-             flex-wrap: wrap;
-             margin-right: 5px;  
-             border: 1px solid black;
-            border-radius: 3%;
-            padding: 1%;
-            margin-bottom: 15px;                      
-            }
-           
-            .bloc_hebergements
-            {
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                align-content: space-around ;
-                margin: 0 0 0 0 ;
-                
-            }                  
-                                .bloc_texte_conteneur_haut{
-                            
-                                width: 100%;
-                                height: auto;
-                                padding: 0;
-                                border: 0px solid ;
-                            
-                                margin-left: 1px;
-                                display: flex;
-                                justify-content: left;
-                                }
-            
-                                            .texte_conteneur_haut
-                                            {
-                                            width: 100%;
-                                            height: auto;
-                                            padding: 0px;
-                                            
-                                            margin: 0px;
-                                            }
-                                            
-                                .conteneur_element_1{
-                               
-                                width: 100%;
-                                height: auto;
-                                padding: 5px;
-                                margin: 5px;
-                                display: flex;
-                                justify-content: space-around;
-                                align-content: space-around;
-                                flex-wrap: wrap ;
-                                }                                        
-                                            .element_1
-                                            { background-color: white;
-                                            width: 30%;
-                                            max-height: auto;
-                                            padding: 5px;
-                                            border: 1px solid black;
-                                            border-radius: 15px;
-                                            margin: 10px;                       
-                                            }
-                                                    .image_hebergement{
-                                                    border: 1px solid black;
-                                                     border-top-left-radius: 15px; 
-                                                     border-top-right-radius: 15px;
-                                                     width: 100%;
-                                                     height: 10em;
-                                                     object-fit: cover;                                                  
-                                                     }
-                                                     
-                                                    .hotel_name{
-                                                        background-color: cornsilk;
-                                                    max-width: 100%;
-                                                    margin: 0.5rem;                                                
-                                                    }
-                                                    .hotel_price{
-                                                        background-color: cyan;
-                                                    max-width: 100%;
-                                                    margin: 0.5rem;
-                                                    }
-                                                    .hotel_evaluation{
-                                                        background-color: darkorange;
-                                                        max-width: 100%;
-                                                        margin: 0.5rem;
-
-                                                    }
-
-
-
-                          
-
-                            .bloc_texte_conteneur_bas{
-                                width: 100%;
-                                height: auto;
-                                padding: 0px;
-                                margin: 0px;
-                                display: flex;
-                                }
-
-                                            .texte_conteneur_bas
-                                            {
-                                            width: 100%;
-                                            height: auto;
-                                            padding: 0px;
-                                            
-                                            margin: 0px;
-                                            }
-
-
-            #bloc_populaires_general
-            {
-            width: 30%;
-            height: 40%;
-            background-color: #F2F2F2;
-            display: flex;
-            align-items: flex-start;
-             border: 1px solid black;
-            border-radius: 3%;
-            padding: 1%; 
-            }
-                    .bloc_populaires_1
-                        {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-content: space-around ;
-                        margin: 0 0 0 0 ;
-                        } 
-                    
-                        .bloc_texte_conteneur_populaires
-                            {
-                            width: 100%;
-                            height: auto;
-                            padding: 0;
-                            border: 0px solid ;
-                            margin-left: 1px;
-                            display: flex;
-                            justify-content: left;
-                            }
-
-                                            .texte_populaires
-                                            {
-                                            background-color: blanchedalmond;
-                                            width: 100%;
-                                            height: auto;
-                                            padding: 0px;
-                                            margin: 0px;
-                                            border: 1px solid black;
-                                            }
-                                            .conteneur_element_2{
-                               
-                                                width: 100%;
-                                                height: auto;
-                                                padding: 5px;
-                                                margin: 5px;
-                                                display: flex;
-                                                flex-direction: column;
-                                                justify-content: space-around;
-                                                align-content: space-around;
-                                               
-                                                }                                        
-                                                            .element_2
-                                                            { background-color: white;
-                                                            max-width: 100%;
-                                                            max-height: auto;
-                                                            padding: 5px;
-                                                            border: 1px solid black;
-                                                            border-radius: 15px;
-                                                            margin: 10px;                       
-                                                            }
-
-                                                                .article_populaire{
-                                                                    background-color: violet;
-                                                                    max-width: 100%;
-                                                                    height: 10em;
-                                                                    margin: 10px;
-                                                                    padding: 5px;
-                                                                    display: flex;
-                                                                    
-                                                                }
-                                                                    .image_element_populaire{
-                                                                       
-                                                                        background-color: turquoise;
-                                                                       margin-right: 15px;
-                                                                        padding: 0px;
-                                                                        border: 1px solid yellow;
-                                                                        border-top-left-radius: 10px;
-                                                                        border-bottom-left-radius: 10px;
-                                                                        width: 10em;
-                                                                        height: 80%;
-                                                                        object-fit: cover;
-                                                                    }
-                                                                        .detail_hotel{
-                                                                            background-color: yellowgreen;
-                                                                            max-width: 65%;
-                                                                            max-height: auto;
-                                                                            display: flex;
-                                                                            flex-direction: column;
-                                                                            align-content: space-around;
-                                                                            align-items: center;
-                                                                        }
-
-                                    
-                                          
-                                  
-/*fin de mise en forme conteneur_1*/
-
-
-/*mise en forme bloc activités*/
+/*Section 2 : bloc hebergements et populaires*/
 #section_2{
     order : 3;
     background-color: chocolate;
@@ -316,121 +109,144 @@ margin-bottom: 15px;
     flex-direction: row;
     margin-bottom: 15px;
 }
-.bloc_hergements{
-    width: 70%;
-    background-color: crimson;
-    margin:2px;
-    padding: 1px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border: 1px solid black;
-}
-.bloc_texte_hebergements{
-    background-color: chartreuse;
-    max-width: 100%;
-    margin: 1px;
-    padding: 0;
-    border: 1px solid black;
-}
-.bloc_hotel_description_hebergements{
-    background-color: black;
-    max-width: 100%;
-   margin: 1px;
-    padding: 1px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around ;
-}
-.bloc_description_detail_hebergements{
-    background-color: cornflowerblue;
-    max-width: 30%;
-    margin: 5px;
-    padding: 1px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+        /*Zone de texte commnune hebergements et populaires : nom, prix, evaluation*/
+        .hotel_name{
+            background-color: cornsilk;
+        max-width: 100%;
+        margin: 0.5rem;                                                
+        }
+        .hotel_price{
+            background-color: cyan;
+        max-width: 100%;
+        margin: 0.5rem;
+        }
+        .hotel_evaluation{
+            background-color: darkorange;
+            max-width: 100%;
+            margin: 0.5rem;
+        }
 
 
-.image_hebergement{
-    margin: 5px;
-    border: 1px solid black;
-    border-top-left-radius: 20px; 
-    border-top-right-radius: 20px;
-    max-width: 100%;
-    height: 8em;
-    object-fit: cover;
-}
+            /*bloc hebergements*/
+            .bloc_hergements{
+                width: 70%;
+                background-color: crimson;
+                margin:2px;
+                padding: 1px;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border: 1px solid black;
+            }
+            .bloc_texte_hebergements{
+                background-color: chartreuse;
+                max-width: 100%;
+                margin: 1px;
+                padding: 0;
+                border: 1px solid black;
+            }
+            .bloc_hotel_description_hebergements{
+                background-color: black;
+                max-width: 100%;
+            margin: 1px;
+                padding: 1px;
+                border: 1px solid black;
+                display: flex;
+                flex-direction:row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-around ;
+            }
+            .bloc_description_detail_hebergements{
+                background-color: cornflowerblue;
+                width: 30%;
+                margin: 5px;
+                padding: 1px;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
 
 
+            .image_hebergement{
+                margin: 5px;
+                border: 1px solid black;
+                border-top-left-radius: 20px; 
+                border-top-right-radius: 20px;
+                max-width: 100%;
+                height: 8em;
+                object-fit: cover;
+            }
+
+            .bloc_texte_detail_hebergements{
+            background-color: darkred;
+            margin: 2px;
+            padding: 1px;
+
+            }
+
+            /*bloc populaires*/
+            .bloc_populaires{
+                width: 30%;
+                background-color: blue;
+                margin: 5px;
+                padding: 1px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+                border-radius: 15px;
+            }
+            .bloc_texte_haut_populaire{
+            background-color: burlywood;
+            max-width: 100%;
+            margin: 2px;
+            padding: 1px;
+            border: 1px solid black;
+            }
+
+            .element_2
+            { background-color: white;
+            max-width: 100%;
+            max-height: auto;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 10px;                       
+            }
+
+            .bloc_description_article_populaires{
+            
+                max-width: auto;
+                max-height: 100%;
+                margin: 2px;
+                padding: 1px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .image_element_populaire{                                                                       
+            
+                border: 1px solid black;
+                border-top-left-radius: 20px; 
+                border-bottom-left-radius: 20px;
+                width: 80%;
+                height: 8em;
+                object-fit: cover;
+            }
 
 
-.bloc_texte_detail_hebergements{
-background-color: darkred;
-margin: 2px;
-padding: 1px;
+            .bloc_detail_populaires{
+                background-color: cyan;
+                width: 100%;
+                margin: 2px;
+                padding: 1px;
+                display: flex;
+                flex-direction: column;
+            }
 
-}
-    
-.bloc_populaires{
-    width: 30%;
-    background-color: blue;
-    margin: 5px;
-    padding: 1px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-.bloc_texte_haut_populaire{
-background-color: burlywood;
-max-width: 100%;
-margin: 2px;
-padding: 1px;
-border: 1px solid black;
-}
-
-.bloc_description_article_populaires{
-   
-    max-width: auto;
-    max-height: 100%;
-    margin: 2px;
-    padding: 1px;
-    display: flex;
-    flex-direction: row;
-}
-
-.image_element_populaire{                                                                       
- 
-    border: 1px solid black;
-    border-top-left-radius: 20px; 
-    border-bottom-left-radius: 20px;
-    width: 80%;
-    height: 8em;
-    object-fit: cover;
-}
-
-
-
-
-
-
-.bloc_detail_populaires{
-    background-color: cyan;
-    width: 100%;
-    margin: 2px;
-    padding: 1px;
-    display: flex;
-    flex-direction: column;
-}
-
-
+/*section 3 : les activités*/
 #section_3{
     order: 4;
     background-color: chartreuse;
@@ -579,30 +395,49 @@ footer
     order: 5;
     background-color:#F2F2F2;
     width: 100%;
-    flex-direction: row;
-
-}
-
-    .contenu-footer
-    {
-    Margin: 0 auto;
+    
+    Margin: 0;
     padding: 2px;
     display: flex;
+    flex-direction: row;
     justify-content:flex-start;
     align-items: flex-start;
+}
 
-    }
-        .bloc_a_propos,
-        .bloc_hebergements,
-        .bloc_assistance
-        {
-            width: auto;
-            margin-right: 20px;
-            margin-left: 2px;
-            padding: auto;
-           
+ 
+
+
+        .bloc_a_propos{
+            background-color: chartreuse;
+            width: 30%;
+            margin: 0;
+            padding: 0;   
+            display: flex; 
+            flex-direction: column; 
+            align-items: flex-start;
+            text-decoration: none;    
         }
-        
+
+        .bloc_hebergements{
+            width: 30%;
+            margin: 0;
+            padding: 0;   
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            text-decoration: none;  
+
+        }
+        .bloc_assistance{
+            width: 30%;
+            margin: 0;
+            padding: 0;   
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            text-decoration: none;  
+        }
+    
 
         /*suppression des puces*/
         .liste_a_propos,
@@ -614,3 +449,6 @@ footer
             
         }
     
+        footer li{
+           margin: 0; 
+        }
