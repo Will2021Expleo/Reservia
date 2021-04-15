@@ -32,37 +32,67 @@
 
 
 
-
-
-
-
-
-
 <section id="section_1">
     <h3>Trouvez votre hébergement pour des vacances de rêve </h3>
     <p>En plein centre ville ou en pleine nature</p>
-        <!--formulaire de saisie pour une recherche de lieu de vacances-->
-        <form method="post" action="traitement.php">
+       
+    
+    <!--formulaire de saisie pour une recherche de lieu de vacances-->
+       <div class="search_form">
+            <i class="fas fa-map-marker-alt"></i>
+
+            <form method="post" action="traitement.php"> 
+             
+                    <div class="name_city">
+                        <input type="text" name="ville" id="ville" placeholder="Marseille, France"/>
+                        
+                    
+                    </div>
+                    
+              
+                
+            </form>
             <p>
-                <input type="text" name="ville" id="ville" placeholder="Marseille, France"/>
-                <label for="ville"> Recherche</label>
+                <label class="search_city"> Recherche</label>
             </p>
 
-         </form>
+
+
+
+            
+        </div> 
        <!--fin formulaire-->
+
+
 
        <div class="search-filters">
             <h3 class="filter-title">Filtres</h3>
         
-            <div class="filter"><i class="fas fa-money-bill-wave"></i> Economique</div> 
+            <div class="filter">
+                <i class="fas fa-money-bill-wave"></i> 
+                <p class="text_filter">Economique</p>
+            </div> 
         
+            <div class="filter">
+                <i class="fas fa-child"></i>
+                <p class="text_filter">Famillial</p>
+            </div>
 
-            <div class="filter"><i class="fas fa-child"></i> Famillial</div>
+            <div class="filter">
+                <i class="fas fa-heart"></i>
+                <p class="text_filter">Romantique</p> 
+            </div>
 
-            <div class="filter"><i class="fas fa-heart"></i> Romantique</div>
-
-            <div class="filter"><i class="fas fa-dog"></i> Animaux autorisés</div>
+            <div class="filter">
+                <i class="fas fa-dog"></i>
+                <p class="text_filter">Animaux autorisés</p>
+            </div>
     
+        </div>
+
+        <div class="comment_search">
+            <i class="fas fa-info-circle"></i> 
+            <p class="information"></p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
 
 </section>
@@ -81,7 +111,13 @@
                         <div class="bloc_texte_detail_hebergements">
                                 <p class="hotel_name">Auberge de la Cannebiere</p>
                                 <p class="hotel_price">Nuit à partir de 25€</p>
-                                <div class="hotel_evaluation">(Note hotel)</div>
+                                <div class="hotel_evaluation">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                         </div>
                 </div>
 

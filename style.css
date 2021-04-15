@@ -14,12 +14,11 @@ body
   background-color: white; /*couleur de fond*/
   font-family: 'Raleway';    /*police*/
   width: 80%;
-
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 15px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
- 
+  flex-direction: column; 
 }
 
 
@@ -27,8 +26,8 @@ body
 
 header{
     
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: auto;
     padding: 0;
 
     margin-bottom: 15px;
@@ -78,30 +77,121 @@ header{
 #section_1{
     order: 2;
     max-width: 100%;
-    background-color: cadetblue;
+    background-color: white;
     margin-bottom: 15px;
     width: 100%;
 }
-.search-filters{
-    display: flex;
-    align-items: center;
-}
-.filter{
-    margin: 25px;
+
+
+.search_form{
+    
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fa-map-marker-alt{
+    margin: 0;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+.name_city{
+    max-width: 100%;
+    margin: 0;    
+}
+
+input{
+    padding: 10px;
+}
+
+.search_city{
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin:0;
+    padding: 9px;
+}
+
+.search-filters{
+    
+    font-size: 12px;
+    max-width: 100%;
+    height: auto;  
+    margin-right: 5px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.filter{
+    background-color: white;
     border: 1px solid #DEEBFF;
     border-radius: 30px;
-    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 10px;
+    padding-right: 15px;
 
 }
-.fas{
+
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-heart,
+.fa-dog
+{
+    max-width: 100%;
     margin-right: 0.5rem;
     border: 1px solid #DEEBFF;
     border-radius: 30px;
     border-width: 15px;
     background-color: #DEEBFF;
-    padding: 0;
+    color: #0065FC;
+    font-size: 15px;
 }
+.text_filter{
+    font-weight: 900;
+}
+.filter :hover{
+    background-color: blue; 
+
+}
+
+.comment_search{
+    margin: 2px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.fa-info-circle{
+    margin: 0;
+    background-color: white;
+    padding: 5px;
+}
+
+
+.fa-star{
+    color: #0065FC;
+    font-size: 10px;
+}
+
+
 
 /*Section 2 : bloc hebergements et populaires*/
 #section_2{
@@ -124,8 +214,13 @@ header{
         .hotel_evaluation{
            
             max-width: 100%;
-            margin: 0.5rem;
+            margin: 0;
+            padding:1px;
+            display: flex;
+            flex-direction: row;
+
         }
+       
 
 
             /*bloc hebergements*/
@@ -204,20 +299,20 @@ header{
             /*bloc populaires*/
             .bloc_populaires{
                 width: 30%;
-                background-color: blue;
+                background-color: #F2F2F2;
                 margin: 5px;
                 padding: 1px;
                 display: flex;
                 flex-direction: column;
-                border: 1px solid black;
-                border-radius: 15px;
+                border: 1px solid #F2F2F2;
+                border-radius: 20px;
             }
             .bloc_texte_haut_populaire{
-            background-color: burlywood;
+            
             max-width: 100%;
             margin: 2px;
             padding: 1px;
-            border: 1px solid black;
+            
             }
 
             .element_2
