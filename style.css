@@ -195,6 +195,7 @@ input{
 
 /*Section 2 : bloc hebergements et populaires*/
 #section_2{
+    max-width: 100%;
     order : 3;
     display: flex;
     flex-direction: row;
@@ -218,8 +219,29 @@ input{
             padding:1px;
             display: flex;
             flex-direction: row;
-
+       }
+       /*Zone de texte populaires : nom, prix, evaluation*/
+       .hotel_name_populaires{
+        max-width: auto;
+        max-height: 100%;
+        margin: 0.5rem;
+        font-weight: 700;                                                
         }
+        .hotel_price_populaires{
+           
+        max-width: auto;
+        max-height: 100%;
+        margin: 0.5rem;
+        }
+        .hotel_evaluation_populaires{
+           
+            max-width: auto;
+            max-height: 100%;
+            margin-left: 10px;
+            padding:1px;
+            display: flex;
+            flex-direction: row;
+       }
        
 
 
@@ -256,6 +278,7 @@ input{
                 justify-content: space-around;
                 align-content: space-around ;
             }
+         
             .bloc_description_detail_hebergements{
                 background-color: white;
                 width: 30%;
@@ -267,16 +290,7 @@ input{
                 flex-direction: column;
                 justify-content: center;
             }
-
-            .bloc_description_article_populaires{
-            
-                width: 100%;
-                max-height: 100%;
-                margin: 2px;
-                padding: 1px;
-                display: flex;
-                flex-direction: row;
-            }
+          
 
 
             .image_hebergement{
@@ -290,15 +304,16 @@ input{
             }
 
             .bloc_texte_detail_hebergements{
-            
             margin: 2px;
-            padding: 1px;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
 
             }
 
             /*bloc populaires*/
             .bloc_populaires{
-                width: 30%;
+                max-width: 30%;
                 background-color: #F2F2F2;
                 margin: 5px;
                 padding: 1px;
@@ -315,32 +330,36 @@ input{
             
             }
 
-            .element_2
-            { background-color: white;
-            max-width: 100%;
-            max-height: auto;
-            padding: 5px;
-            border: 1px solid black;
-            border-radius: 15px;
-            margin: 10px;                       
+
+            
+
+            .bloc_description_article_populaires{
+            background-color: white;
+                max-width: 100%;
+                margin: 10px;
+                padding: 1px;
+                border: 1px solid white;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+               
+
             }
-
-
 
             .image_element_populaire{                                                                       
             
                 border: 1px solid white;
                 border-top-left-radius: 20px; 
                 border-bottom-left-radius: 20px;
-                width: 50%;
-                height: 8em;
+                width: 40%;
+                height: 10em;
                 object-fit: cover;
             }
 
 
             .bloc_detail_populaires{
-                background-color: cyan;
-                max-width: 80%;
+                background-color: white;
+                width: 60%;
                 margin: 2px;
                 padding: 1px;
                 display: flex;
