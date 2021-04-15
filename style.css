@@ -13,7 +13,7 @@ body
 {
   background-color: white; /*couleur de fond*/
   font-family: 'Raleway';    /*police*/
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -204,7 +204,7 @@ input{
         .hotel_name{
         max-width: 100%;
         margin: 0.5rem;
-        font-weight: 900;                                                
+        font-weight: 700;                                                
         }
         .hotel_price{
            
@@ -281,7 +281,7 @@ input{
 
             .image_hebergement{
                 margin: 5px;
-                border: 1px solid black;
+                border: 1px solid white;
                 border-top-left-radius: 20px; 
                 border-top-right-radius: 20px;
                 max-width: 100%;
@@ -329,7 +329,7 @@ input{
 
             .image_element_populaire{                                                                       
             
-                border: 1px solid black;
+                border: 1px solid white;
                 border-top-left-radius: 20px; 
                 border-bottom-left-radius: 20px;
                 width: 50%;
@@ -350,43 +350,53 @@ input{
 /*section 3 : les activités*/
 #section_3{
     order: 4;
-    background-color: chartreuse;
+  
     margin-bottom: 5px;
 }
 .bloc_activity{   
     width: 100%;
     height: auto;
-    background-color:black;
+   
     margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+   
 }
         .texte_bloc_activity{
-            background-color: darkorange;
+            
             max-width: 100%;
             margin: 5px;
         }    
                 .bloc_principal_article{
-                    background-color: darkorchid;
+                   
                     max-width: 100%;
-                    margin: 5px;
+                    margin: 0px;
                     display: flex;
                     flex-direction: row;
+                    
                 }
                         .bloc_1_article_activity{
-                            background-color: darkseagreen;
+                            background-color: white;
                             width: 25%;
-                            margin: 5px;
+                            margin-right: 30px;
+                            margin-bottom: 10px;
                             display: flex;
                             flex-direction: column;
+                            border: 1px solid #F2F2F2;
+                            border-radius: 20px;
+                           
+
                         }
                                 .image_bloc_1_article_activity{
-                                    background-color: darkslateblue;
+                                    
                                     max-width: 100%;
                                     height: 100%;
-                                    margin: 5px;
+                                    margin: 0;
                                     object-fit: cover;
+                                    border: 1px solid #F2F2F2;
+                                    border-top-left-radius: 20px;
+                                    border-top-right-radius: 20px;
                                 }
 
 
@@ -395,97 +405,133 @@ input{
 
 
                                 .texte_image{
-                                    background-color: darkturquoise;
+                                    
                                     max-width: 100%;
                                     margin: 5px;
+                                    font-weight: 700;
+
                                 }
                         .bloc_2_article_activity{
-                            background-color: dodgerblue;
+                           
                             width: 25%;
-                            margin: 5px;
+                            margin-right: 30px;
+                            
                             display: flex;
                             flex-direction: column;
+                            align-items: space-between;
                         }
                                 .bloc_2_article_1{
-                                    background-color: firebrick;
+                                    background-color: white;
                                     max-width: auto;
-                                    margin: 5px;
+                                    margin-bottom: 30px;
                                     display: flex;
                                     flex-direction: column;
+                                    border: 1px solid #F2F2F2;
+                                    border-radius: 15px;
                                 }
                                         .image_bloc_2_article_1_activity{
-                                            background-color:green;
+                                            
                                             max-width: 100%;
                                             height: 10em;
-                                            margin: 5px;
+                                            margin: 0;
                                             object-fit: cover;
+                                            border: 1px solid #F2F2F2;
+                                            border-top-left-radius: 20px;
+                                            border-top-right-radius: 20px;
                                         }
 
                                 .bloc_2_article_2{
-                                    background-color: firebrick;
+                                    background-color: white;
                                     max-width: auto;
-                                    margin: 5px;
+                                    margin-top: 15px;
                                     display: flex;
                                     flex-direction: column;
+                                    border: 1px solid #F2F2F2;
+                                    border-radius: 15px;
                                 }
                                         .image_bloc_2_article_2_activity{
-                                            background-color:green;
+                                         
                                             max-width: 100%;
                                             height: 10em;
-                                            margin: 5px;
+                                            margin: 0;
                                             object-fit: cover;
+                                            border: 1px solid #F2F2F2;
+                                            border-top-left-radius: 20px;
+                                            border-top-right-radius: 20px;
                                         }
 
                         .bloc_3_article_activity{
-                            background-color: darkseagreen;
-                            width: 25%;
-                            margin: 5px;
+                            background-color: white;
+                            max-width: 25%;
+                            max-height: auto;
+                            margin-right: 30px;
+                            margin-bottom: 10px;
                             display: flex;
                             flex-direction: column;
+                            border: 1px solid #F2F2F2;
+                            border-radius: 20px;
                         }
                                                 .image_bloc_3_article_activity{
-                                                    background-color: darkslateblue;
+                                                   
                                                     max-width: 100%;
                                                     height: 100%;
-                                                    margin: 5px;
+                                                    margin: 0;
                                                     object-fit: cover;
+                                                    border: 1px solid #F2F2F2;
+                                                    border-top-left-radius: 20px;
+                                                    border-top-right-radius: 20px;
                                                 }
 
                         .bloc_4_article_activity{
-                            background-color: dodgerblue;
+                           
                             width: 25%;
                             margin: 5px;
+                            padding: 5px;
                             display: flex;
                             flex-direction: column;
+                            
+                            
                         }
                                                 .bloc_4_article_1{
-                                                    background-color: firebrick;
+                                                    background-color: white;
                                                     max-width: 100%;
-                                                    margin: 5px;
+                                                    margin: 0;
                                                     display: flex;
                                                     flex-direction: column;
+                                                    border: 1px solid #F2F2F2;
+                                                    border-radius: 20px;
+                                                    margin-bottom: 20px;
                                                 }
                                                         .image_bloc_4_article_1_activity{
-                                                            background-color:green;
+                                                          
                                                             max-width: 100%;
                                                             height: 10em;
-                                                            margin: 5px;
+                                                            margin: 0;
                                                             object-fit: cover;
+                                                            border: 1px solid #F2F2F2;
+                                                            border-top-left-radius: 20px;
+                                                            border-top-right-radius: 20px;
                                                         }
                 
                                                 .bloc_4_article_2{
-                                                    background-color: firebrick;
-                                                    max-width: auto;
-                                                    margin: 5px;
+                                                    background-color: white;
+                                                    max-width: 100%;
+                                                    margin-top: 20px;
                                                     display: flex;
                                                     flex-direction: column;
+                                                    
+                                                    border: 1px solid #F2F2F2;
+                                                    border-radius: 20px;
                                                 }
                                                         .image_bloc_4_article_2_activity{
-                                                            background-color:green;
+                                                     
                                                             max-width: 100%;
                                                             height: 10em;
-                                                            margin: 5px;
+                                                            margin: 0;
                                                             object-fit: cover;
+                                                            border: 1px solid #F2F2F2;
+                                                            border-top-left-radius: 20px;
+                                                            border-top-right-radius: 20px;
                                                         }
 
 
@@ -509,18 +555,24 @@ footer
 
 
         .bloc_a_propos{
-            background-color: chartreuse;
-            width: 30%;
+            background-color: blue;
+            max-width: 30%;
+            max-height: auto;
             margin: 0;
             padding: 0;   
             display: flex; 
             flex-direction: column; 
-            align-items: flex-start;
-            text-decoration: none;    
+            align-items: center;
+            text-decoration: none;
+
+      
+             
         }
 
         .bloc_hebergements{
-            width: 30%;
+            background-color:white;
+            max-width: 30%;
+            max-height: auto;
             margin: 0;
             padding: 0;   
             display: flex; 
@@ -530,12 +582,15 @@ footer
 
         }
         .bloc_assistance{
-            width: 30%;
+            background-color: red;
+            max-width: 30%;
+            max-height: auto;
             margin: 0;
             padding: 0;   
             display: flex; 
             flex-direction: column; 
-            align-items: center;
+            align-items: flex-start;
+            justify-content: flex-start;
             text-decoration: none;  
         }
     
@@ -545,11 +600,16 @@ footer
         .liste_hebergements,
         .liste_assistance
         {
-           
+           margin: 0;
             list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
             
         }
     
         footer li{
-           margin: 0; 
+           margin: 10px; 
         }
