@@ -202,25 +202,27 @@ input{
     margin-bottom: 15px;
 }
         /*Zone de texte commnune hebergements et populaires : nom, prix, evaluation*/
+
         .hotel_name{
         max-width: 100%;
-        margin: 0.5rem;
+        margin: 0 5px;
         font-weight: 700;                                                
         }
         .hotel_price{
            
         max-width: 100%;
-        margin: 0.5rem;
+        margin: 0.5em 5px;
         }
         .hotel_evaluation{
            
             max-width: 100%;
-            margin: 0;
-            padding:1px;
+            margin-left: 5px;
+            padding:0;
             display: flex;
             flex-direction: row;
        }
        /*Zone de texte populaires : nom, prix, evaluation*/
+
        .hotel_name_populaires{
         max-width: auto;
         max-height: 100%;
@@ -235,19 +237,20 @@ input{
         }
         .hotel_evaluation_populaires{
            
-            max-width: auto;
+            max-width: 100%;
             max-height: 100%;
             margin-left: 10px;
             padding:1px;
             display: flex;
             flex-direction: row;
+            margin-top: auto;
        }
        
 
 
             /*bloc hebergements*/
-            .bloc_hergements{
-                width: 70%;
+            .bloc_hebergements{
+                max-width: 100%;
                background-color: #F2F2F2;
                 margin:2px;
                 padding: 0;
@@ -260,12 +263,14 @@ input{
                
             }
             .bloc_texte_hebergements{
-               
                 max-width: 100%;
-                margin: 5px;
+                margin: 0 5px;
                 padding: 0;
-              
             }
+            .bloc_texte_hebergements h3{
+                margin: 0px;
+            }
+
             .bloc_hotel_description_hebergements{
                
                 max-width: 100%;
@@ -282,7 +287,7 @@ input{
             .bloc_description_detail_hebergements{
                 background-color: white;
                 width: 30%;
-                margin: 5px;
+                margin: 0 5px 10px 5px;
                 padding: 1px;
                 border: 1px solid white;
                 border-radius: 20px;
@@ -313,7 +318,7 @@ input{
 
             /*bloc populaires*/
             .bloc_populaires{
-                max-width: 30%;
+                max-width: 100%;
                 background-color: #F2F2F2;
                 margin: 5px;
                 padding: 1px;
@@ -325,8 +330,11 @@ input{
             .bloc_texte_haut_populaire{
             
             max-width: 100%;
-            margin: 2px;
-            padding: 1px;
+            margin: 0 5px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             
             }
 
@@ -336,7 +344,7 @@ input{
             .bloc_description_article_populaires{
             background-color: white;
                 max-width: 100%;
-                margin: 10px;
+                margin: 15px;
                 padding: 1px;
                 border: 1px solid white;
                 border-radius: 20px;
@@ -364,6 +372,14 @@ input{
                 padding: 1px;
                 display: flex;
                 flex-direction: column;
+            }
+
+            .name_price_populaires{
+               
+                display: flex;
+                flex-direction: column;
+                margin:0;
+
             }
 
 /*section 3 : les activités*/
@@ -574,9 +590,9 @@ footer{
     font-size: 15px;
 }
 
-.bloc_a_propos,
-.bloc_hebergements,
-.bloc_assistance{
+.footer_bloc_a_propos,
+.footer_bloc_hebergements,
+.footer_bloc_assistance{
     width: 30%;
     margin: 0;
     padding: 0;
@@ -584,9 +600,9 @@ footer{
 }
 
 /*h3 de chaque bloc du footer*/
-.bloc_a_propos h3,
-.bloc_hebergements h3,
-.bloc_assistance h3{
+.footer_bloc_a_propos h3,
+.footer_bloc_hebergements h3,
+.footer_bloc_assistance h3{
     font-size: 15px;
     padding-bottom: 5px;
     margin-left: 15px;
