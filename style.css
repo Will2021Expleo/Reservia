@@ -27,10 +27,8 @@ body
 header{
     
     max-width: 100%;
-    max-height: auto;
     padding: 0;
-
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     order: 1; 
 }
 
@@ -206,7 +204,7 @@ input{
         .hotel_name{
         max-width: 100%;
         margin: 0 5px;
-        font-weight: 700;                                                
+        font-weight: 600;                                                
         }
         .hotel_price{
            
@@ -250,7 +248,7 @@ input{
 
             /*bloc hebergements*/
             .bloc_hebergements{
-                max-width: 100%;
+                width: 70%;
                background-color: #F2F2F2;
                 margin:2px;
                 padding: 0;
@@ -297,16 +295,16 @@ input{
             }
           
 
-
             .image_hebergement{
-                margin: 5px;
+                margin: 0px;
                 border: 1px solid white;
                 border-top-left-radius: 20px; 
                 border-top-right-radius: 20px;
-                max-width: 100%;
+                width: 100%;
                 height: 8em;
                 object-fit: cover;
             }
+
 
             .bloc_texte_detail_hebergements{
             margin: 2px;
@@ -318,7 +316,7 @@ input{
 
             /*bloc populaires*/
             .bloc_populaires{
-                max-width: 100%;
+                width: 30%;
                 background-color: #F2F2F2;
                 margin: 5px;
                 padding: 1px;
@@ -338,9 +336,6 @@ input{
             
             }
 
-
-            
-
             .bloc_description_article_populaires{
             background-color: white;
                 max-width: 100%;
@@ -359,8 +354,8 @@ input{
                 border: 1px solid white;
                 border-top-left-radius: 20px; 
                 border-bottom-left-radius: 20px;
-                width: 40%;
-                height: 10em;
+                width: 30%;
+                height: 8em;
                 object-fit: cover;
             }
 
@@ -436,10 +431,7 @@ input{
 
 
 
-
-
-
-                                .texte_image{
+                                .texte_image_populaires{
                                     
                                     max-width: 100%;
                                     margin: 5px;
@@ -466,8 +458,8 @@ input{
                                 }
                                         .image_bloc_2_article_1_activity{
                                             
-                                            max-width: 100%;
-                                            height: 10em;
+                                            width: 100%;
+                                            height: 12em;
                                             margin: 0;
                                             object-fit: cover;
                                             border: 1px solid #F2F2F2;
@@ -486,7 +478,7 @@ input{
                                 }
                                         .image_bloc_2_article_2_activity{
                                          
-                                            max-width: 100%;
+                                            width: 100%;
                                             height: 10em;
                                             margin: 0;
                                             object-fit: cover;
@@ -498,7 +490,7 @@ input{
                         .bloc_3_article_activity{
                             background-color: white;
                             max-width: 25%;
-                            max-height: auto;
+                            
                             margin-right: 30px;
                             margin-bottom: 10px;
                             display: flex;
@@ -506,6 +498,11 @@ input{
                             border: 1px solid #F2F2F2;
                             border-radius: 20px;
                         }
+
+
+
+
+
                                                 .image_bloc_3_article_activity{
                                                    
                                                     max-width: 100%;
@@ -516,6 +513,8 @@ input{
                                                     border-top-left-radius: 20px;
                                                     border-top-right-radius: 20px;
                                                 }
+
+
 
                         .bloc_4_article_activity{
                            
@@ -561,7 +560,7 @@ input{
                                                         .image_bloc_4_article_2_activity{
                                                      
                                                             max-width: 100%;
-                                                            height: 10em;
+                                                            height: 12em;
                                                             margin: 0;
                                                             object-fit: cover;
                                                             border: 1px solid #F2F2F2;
