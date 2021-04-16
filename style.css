@@ -556,79 +556,68 @@ input{
 
 
 /*mise en forme du footer*/
-footer
-{
+footer{
     order: 5;
-    background-color:#F2F2F2;
-    width: 100%;
-    
-    Margin: 0;
-    padding: 2px;
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: flex-start;
+    background-color:#F2F2F2;  
 }
 
+
+.contenu_footer
+{
+    width: 100%;
+    Margin: 0 auto;
+    padding: 10px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: flex-start;
+    font-size: 15px;
+}
+
+.bloc_a_propos,
+.bloc_hebergements,
+.bloc_assistance{
+    width: 30%;
+    margin: 0;
+    padding: 0;
  
+}
+
+/*h3 de chaque bloc du footer*/
+.bloc_a_propos h3,
+.bloc_hebergements h3,
+.bloc_assistance h3{
+    font-size: 15px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+
+}
+.liste_a_propos,
+.liste_hebergements,
+.liste_assistance{
+    list-style-type: none;
+    margin-left: 0rem;
+    padding: 0px;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+
+}
+.liste_a_propos ul,
+.liste_hebergements ul,
+.liste_assistance ul{
+    margin-block-start: 0px;
 
 
-        .bloc_a_propos{
-            background-color: blue;
-            max-width: 30%;
-            max-height: auto;
-            margin: 0;
-            padding: 0;   
-            display: flex; 
-            flex-direction: column; 
-            align-items: center;
-            text-decoration: none;
+}
 
-      
-             
-        }
-
-        .bloc_hebergements{
-            background-color:white;
-            max-width: 30%;
-            max-height: auto;
-            margin: 0;
-            padding: 0;   
-            display: flex; 
-            flex-direction: column; 
-            align-items: center;
-            text-decoration: none;  
-
-        }
-        .bloc_assistance{
-            background-color: red;
-            max-width: 30%;
-            max-height: auto;
-            margin: 0;
-            padding: 0;   
-            display: flex; 
-            flex-direction: column; 
-            align-items: flex-start;
-            justify-content: flex-start;
-            text-decoration: none;  
-        }
-    
-
-        /*suppression des puces*/
-        .liste_a_propos,
-        .liste_hebergements,
-        .liste_assistance
-        {
-           margin: 0;
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            
-        }
-    
-        footer li{
-           margin: 10px; 
-        }
+.liste_a_propos li,
+.liste_hebergements li,
+.liste_assistance li{
+    padding: 5px 0; /*2px en haut et en bas et 0px à gauche et à droite*/
+}
+.liste_a_propos a,
+.liste_hebergements a,
+.liste_assistance a{
+text-decoration: none;
+color: grey;
+}
