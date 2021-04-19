@@ -10,8 +10,10 @@
     }
     #section_1{
         order: 2;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
+    
+    
     #section_2{
         flex-direction: column;
     }
