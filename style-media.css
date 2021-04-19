@@ -1,0 +1,60 @@
+/*adaptation du site à tout type de média dont l'écran est inférieur à 1024px*/
+@media all and (max-width: 900px)
+{
+    #bloc_page{
+        width:auto;
+        font-size: small;
+    }
+    header{
+        order: 1;
+    }
+    #section_1{
+        order: 2;
+        flex-direction: column-reverse;
+    }
+    #section_2{
+        flex-direction: column;
+    }
+    .bloc_populaires{
+    order:3;
+    width: 100%;
+
+    }
+    .bloc_hebergements{
+        order:4;
+       width: 100%;
+    }
+    .bloc_description_detail_hebergements{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bloc_principal_article_activities{
+    width: 100%;
+    flex-direction: column;
+    margin: 5px 1px;
+    }
+
+    .bloc_1_article_activity,
+    .bloc_2_article_activity,
+    .bloc_3_article_activity,
+    .bloc_4_article_activity{
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+    .image_bloc_1_article_activity,
+    .image_bloc_3_article_activity{
+        width: 100%;
+        height: 11em;
+    }
+      .contenu_footer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        font-size: small;
+    }
+    .footer_bloc_a_propos, .footer_bloc_hebergements, .footer_bloc_assistance{
+        width: 100%;
+    
+    }
+}
