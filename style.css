@@ -9,9 +9,9 @@ body
   background-color: white; /*couleur de fond*/
   font-family: 'Raleway';    /*police*/
 
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+
+width: 70%;
+margin: auto;
   margin-top: 15px;
   display: flex;
   flex-direction: column; 
@@ -27,26 +27,28 @@ header{
     margin-bottom: 10px;
     order: 1; 
 }
-        /*logo en haut à gauche*/
-        .logo{ 
-            max-width: 100%;
-            height: auto;
-            padding: 0; margin: 0;
-            float: left;
-        }        
+      
         /*css du menu en haut à droite*/
         .menu{
             width: 100%;
             height: 66px;
             line-height: 66px;
+            display: flex;
+            justify-content: space-between;
         }
-        
+                /*logo en haut à gauche*/
+            .logo{ 
+                max-width: 100%;
+                height: auto;
+                padding: 0; margin: 0;
+            
+            }  
             /*suppression du trait en dessus des liens et couleur du texte en bleu*/
             .link{
                 text-decoration: none;
                 color: #0065FC;
                 font-weight: 500;
-                padding: 15px;
+                padding: 10px;
             }
             /*animation au survol de la souris sur les liens du menu*/
             .link_main a:hover{
@@ -56,9 +58,7 @@ header{
             .link_main{
                 text-decoration: none;
                 padding: 0; 
-                margin: 0;
-                float: right;
-                max-width: 100%;
+
                 }
 
         
