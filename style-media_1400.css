@@ -1,6 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
 /*adaptation du site à tout type de média dont l'écran est inférieur à 1024px*/
-@media all and (max-width: 900px)
+@media all and (max-device-width: 1400px)
 {
+    body{
+background-color: yellow;
+}
+
+ 
+
+
+    .search_form_small_media form,
+    #small_media 
+    { 
+    display: none;
+    }
+
     #bloc_page{
         width:auto;
         font-size: small;
@@ -18,10 +32,22 @@
         flex-direction: column;
     }
     .bloc_populaires{
-    order:3;
+  
     width: 100%;
-
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
     }
+    .bloc_texte_haut_populaire{
+       width: 100%;
+        display: flex;
+        align-self: flex-start;
+        margin: 0 10px;
+    }
+    .bloc_description_article_populaires{
+        width: 30%;
+    }
+
     .bloc_hebergements{
         order:4;
        width: 100%;
@@ -59,4 +85,9 @@
         width: 100%;
     
     }
+
+
+
+/*champ de recherche*/
+
 }
