@@ -3,14 +3,13 @@
 {
 body{
 background-color: rgb(0, 247, 255);
+margin: auto;
 }
 
-
-
-
-.search_form form{ 
+.search_form form, #big_media{ 
     display: none;
 }
+
 /*formulaire de recherche version petit média*/
 .search_form_small_media form{
     
@@ -49,8 +48,6 @@ background-color: rgb(0, 247, 255);
 }
 
 .search_form_small_media input{
-    
-  
     border: none;
 }
 
@@ -80,6 +77,49 @@ background-color: rgb(0, 247, 255);
     border: none;
     border-radius: 10px;
 }
+
+
+
+
+ .filters{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filter_title{
+    width: 100%;
+}
+
+/*bloc populaires*/
+    .bloc_populaires{
+ flex-direction: column;
+margin: 1px;
+width: 100%;
+    
+    }
+
+    .bloc_texte_haut_populaire{
+        width: 90%;
+  
+        margin: 1px;
+        justify-content: space-between;
+        align-self: flex-start;
+    }
+
+
+    .bloc_description_article_populaires{
+        width: 100%;
+   flex-direction: row;
+        flex-wrap: nowrap;
+       justify-content: flex-start;
+    }
+
+
+
+
+
+ 
+
 
 }
 

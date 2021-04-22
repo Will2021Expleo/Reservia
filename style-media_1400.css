@@ -4,10 +4,20 @@
 {
     body{
 background-color: yellow;
+font-size: small;
 }
 
- 
 
+            #bloc_page
+            {
+            background-color: white; /*couleur de fond*/
+            font-family: 'Raleway';    /*police*/
+            width: 100%;
+            margin: auto;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column; 
+            }
 
     .search_form_small_media form,
     #small_media 
@@ -15,10 +25,9 @@ background-color: yellow;
     display: none;
     }
 
-    #bloc_page{
-        width:auto;
-        font-size: small;
-    }
+
+
+    
     header{
         order: 1;
     }
@@ -26,14 +35,14 @@ background-color: yellow;
         order: 2;
         flex-direction: column;
     }
-    
-    
-    #section_2{
+       #section_2{
         flex-direction: column;
     }
+    
+
     .bloc_populaires{
-  
     width: 100%;
+
     flex-direction: row;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -42,26 +51,24 @@ background-color: yellow;
        width: 100%;
         display: flex;
         align-self: flex-start;
-        margin: 0 10px;
-    }
-    .bloc_description_article_populaires{
-        width: 30%;
+        margin: 0 8px;
     }
 
-    .bloc_hebergements{
+
+
+    .bloc_description_article_populaires{
+        width: 30%;
+        margin: 10px;
+    }
+
+    .bloc_hebergements{ 
         order:4;
        width: 100%;
+       margin: 10px; 
     }
-    .bloc_description_detail_hebergements{
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .bloc_principal_article_activities{
-    width: 100%;
-    flex-direction: column;
-    margin: 5px 1px;
-    }
+
+
+
 
     .bloc_1_article_activity,
     .bloc_2_article_activity,
@@ -76,15 +83,46 @@ background-color: yellow;
         width: 100%;
         height: 11em;
     }
-      .contenu_footer{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        font-size: small;
-    }
+      
     .footer_bloc_a_propos, .footer_bloc_hebergements, .footer_bloc_assistance{
         width: 100%;
     
     }
+
+   .bloc_hotel_description_hebergements{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bloc_description_detail_hebergements{
+    
+        width: 40%;
+    }
+
+
+.bloc_4_article_activity,
+.bloc_2_article_activity{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bloc_1_article_activity,
+.bloc_2_article_activity,
+.bloc_3_article_activity,
+.bloc_4_article_activity{
+        width: 50%;
+    height: 30%;
+    padding: 5px;
+}
+.bloc_1_article_activity,
+.bloc_2_article_1,
+.bloc_2_article_2,
+.bloc_3_article_activity,
+.bloc_4_article_1,
+.bloc_4_article_2{
+    flex-wrap: wrap;
+
+}
 
 
 
