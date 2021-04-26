@@ -1,50 +1,76 @@
 @media all and (max-device-width: 650px)
 
 {
-body{
-background-color: rgb(0, 255, 64);
-}
-
-
-.search_form form, #big_media{ 
-    display: none;
-}
-
-#small_media{
-
-display: flex;
-flex-direction: column;
-}
-
-#nav_head1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#nav_head2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1em;
-}
-
-    .bloc_populaires{
-    max-width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    
-    }
-    .bloc_texte_haut_populaire{
-       max-width: 100%;
- 
-    }
-
-
    
+
+    #header_big_media{
+        display: none;
+    }
+
+    #header_small_media{
+        display: flex;
+        flex-direction: column;
+    }
+	#nav_head1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #nav_head2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1em;
+    }
+        .link_navigation a:hover{
+        border-bottom: 2px solid #0065FC;
+        padding: 10px;
+    }
+
+    .bloc_activity{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc_hotel_description_hebergements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc_description_detail_hebergements{
+        width: 100%;
+        margin: auto;
+    }
+    .bloc_principal_article_activities{
+        width: 100%;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+     .image_bloc_1_article_activity,
+     .image_bloc_3_article_activity{
+        width: 70em;
+        height: 12em;
+    }
+
+    .bloc_1_article_activity,
+    .bloc_2_article_activity,
+    .bloc_3_article_activity,
+    .bloc_4_article_activity{
+        width: 100%;
+        margin: auto;
+    }
+
+   .contenu_footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        font-size: small;
+        margin: 0;
+    }
 
 }
 
