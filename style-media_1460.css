@@ -2,8 +2,6 @@
 /*adaptation du site à tout type de média dont l'écran est inférieur à 1024px*/
 @media all and (max-device-width: 1460px)
 {
-   
-
     #bloc_page{
     background-color: white; /*couleur de fond*/
     width: 100%;
@@ -41,6 +39,4 @@
         align-items: flex-start;
         font-size: 15px;
     }
-
-
 }
