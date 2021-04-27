@@ -1,4 +1,4 @@
-@media all and (max-device-width: 1090px)
+@media screen and (max-device-width: 1090px)
 
 {
     #bloc_page{
@@ -96,6 +96,9 @@
         width: 100%;
         margin: auto;
     }
+    .bloc_description_detail_hebergements{
+        width: 45%;
+        }
     .bloc_hebergements_populaires .bloc_populaires{
         width: 100%;
         flex-direction: column;
