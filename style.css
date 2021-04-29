@@ -7,7 +7,7 @@
 #bloc_page{
     background-color: white; /*couleur de fond*/
     font-family: 'Raleway';    /*police*/
-    max-width: 1460px;
+    width: 70%;
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -19,10 +19,6 @@
     display: none;
 }
 /*mise en forme du header*/
-header{
-    max-width: 1460px;
-    margin: auto;
-}
 /*paramètres généraux*/
 header #big_media{
     width: 100%;
@@ -54,20 +50,15 @@ header #big_media{
 /*mise en forme des liens*/
 .link{
     text-decoration: none;
-   color: black;
+    color: #0065FC;
     font-weight: 500;
-    padding: 0 10px;
+    padding: 10px;
     margin: 0;
 }
-.link_subscription .link{
-    color: #0065FC;
-}
-
 /*animation au survol de la souris sur les liens du menu*/
 .link_navigation a:hover,
 .link_subscription a:hover{
-    border-top: 2px solid #0065FC;
-    color: #0065FC;
+    border-top: 1px solid #0065FC;
     padding: 30px;
 }
 
@@ -87,7 +78,7 @@ header #big_media{
     font-size: 12px;
     max-width: 100%;
     height: 3em; 
-    margin-bottom: 2em;
+    margin: 5px;
     padding: 0;
     display: flex;
     flex-direction: row;   
@@ -96,7 +87,7 @@ header #big_media{
 }
 /*mise en forme icone et zone de recherche*/
 .search_form .fas{
-    background-color: #F2F2F2;
+    background-color: gray;
     border: 0px solid black;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -109,9 +100,9 @@ header #big_media{
 }
 
 .search_form .fa{
-    border: 0 solid ;
+    border: 0 solid blue;
     border-radius: 10px;
-   
+    background-color: cyan;
     width: 3em;
     height: 2.6em;
     display: flex;
@@ -129,7 +120,7 @@ header #big_media{
     color: white;
     font-size: 16px;
     background-color: #0065FC;
-    width: 6.5em;
+    width: 10em;
     height: 2.4em;
     border: 0;
     border-top-right-radius: 10px;
@@ -160,7 +151,6 @@ header #big_media{
     max-width: 100%;
     height: auto;  
     margin-right: 5px;
-    margin-bottom: 1.5em;
     padding: 1px;
     display: flex;
     flex-direction: row;
@@ -171,7 +161,7 @@ header #big_media{
 
 .text_filter{
     background-color: white;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
@@ -180,19 +170,17 @@ header #big_media{
     margin-right: 15px;
     margin-left: 10px;
     padding-right: 15px;
-    height: 3.8em;
-    
+    height: 3.5em;
 }
 
 .filters :hover{
     background-color: #DEEBFF;  
     cursor: cell;
-    
+    color: #0065FC;
 }
 .text_filter a{
     text-decoration: none;
     font-size: 16px;
-    color: black;
     
 }
 .fa-money-bill-wave,
@@ -200,8 +188,8 @@ header #big_media{
 .fa-heart,
 .fa-dog
 {
-    width: 1em;
-    height: 1em;
+    width: 0.8em;
+    height: 0.8em;
     margin-right: 0.5rem;
     border: 1px solid #DEEBFF;
     border-radius: 100%;
@@ -209,7 +197,6 @@ header #big_media{
     background-color: #DEEBFF;
     color: #0065FC;
     font-size: 16px;
-    text-align: center;
 }
 
 /*information du résultat de la recherche*/
@@ -222,16 +209,10 @@ header #big_media{
     align-items: center;
 }
 
-.fa-info{
-    margin-right: 5px;
+.fa-info-circle{
+    margin: 0;
     background-color: white;
-    border: 1px solid #F2F2F2;
-    width: 10px;
-    border-radius: 30px;
-    font-size: 10px;
-    text-align: center;
-    padding: 3px;
-    color: #0065FC;
+    padding: 5px;
 }
 
 
@@ -291,7 +272,7 @@ header #big_media{
     object-fit: cover;
 }
 .bloc_texte_detail_hebergements{                          
-    margin: 0 0.5em;
+    margin: 2px;
     padding: 0;
     display: flex;
     flex-direction: column;        
@@ -299,12 +280,12 @@ header #big_media{
 
 .bloc_hebergements_populaires .bloc_texte_hebergements{
     max-width: 100%;
-    margin: 0 0 0 2em;
+    margin: 0 1em;
     padding: 0;
 }
 .bloc_hebergements .hotel_name{
     max-width: 100%;
-   margin: 0 0 0 2px;
+    margin-left: 2px;
     font-weight: 600;
     font-size: 15px;
     padding: 0;                                                
@@ -316,7 +297,7 @@ header #big_media{
 }
 .bloc_hebergements .hotel_evaluation{
     max-width: 100%;
-    margin:1px 0 2px 2px;
+    margin-left: 5px;
     padding:0;
     display: flex;
     flex-direction: row;
@@ -336,20 +317,17 @@ header #big_media{
 
 .bloc_texte_haut_populaire{                        
     max-width: 100%;
-    margin: 0 1.3em 0 1em;
+    margin: 0 10px;
     padding: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;                        
 }
-.bloc_contenu_populaires{
-    display: flex;
-    flex-direction: column;
-}
+
 .bloc_description_article_populaires{
 background-color: white;
     max-width: 100%;
-    margin: 0 1em 1.5em 1em;
+    margin: 15px;
     padding: 1px;
     border: 1px solid white;
     border-radius: 20px;
@@ -369,27 +347,21 @@ background-color: white;
 .bloc_detail_populaires{
     background-color: white;
     width: 100%;
-    height: 7em;
     margin: 0.5em;
-    padding: 0;
+    padding: 1px;
     display: flex;
     flex-direction: column;
 }
     
-.hotel_evaluation_populaires .fas{
+.bloc_hebergements_populaires .fa-star{
     color: #0065FC;
     font-size: 10px;
-    }
-.hotel_evaluation_populaires .far{
-    color: grey;
-    font-size: 10px;
-    
     }
 
 .hotel_name_populaires{
     max-width: auto;
     max-height: 100%;
-    margin: 0.5em 0 0.5em 0.5em;
+    margin: 0.5rem;
     font-weight: 700;
     font-size: 14px;                                                
     }
@@ -397,14 +369,14 @@ background-color: white;
 .hotel_price_populaires{
     max-width: auto;
     max-height: 100%;
-    margin: 0 0 0 0.5em;
+    margin: 0.5rem;
     font-size: 14px
     }
 
 .hotel_evaluation_populaires{        
     max-width: 100%;
     max-height: 100%;
-    margin: 0 0 0 0.5em;
+    margin-left: 10px;
     padding:1px;
     display: flex;
     flex-direction: row;
@@ -456,7 +428,6 @@ background-color: white;
                         .texte_image_activity{                                                
                             max-width: 100%;
                             margin: 5px;
-                            padding: 0.5em;
                             font-weight: 700;
                         }
                         
@@ -474,7 +445,7 @@ background-color: white;
                             display: flex;
                             flex-direction: column;
                             border: 1px solid #F2F2F2;
-                            border-radius: 20px;
+                            border-radius: 15px;
                         }
                                 .image_bloc_2_article_1_activity{
                                     
@@ -494,7 +465,7 @@ background-color: white;
                             display: flex;
                             flex-direction: column;
                             border: 1px solid #F2F2F2;
-                            border-radius: 20px;
+                            border-radius: 15px;
                         }
                                 .image_bloc_2_article_2_activity{
                                 
@@ -577,15 +548,14 @@ background-color: white;
             /*mise en forme du footer*/
             footer{
                 order: 5;
-                max-width: 100%;
-                background-color:#F2F2F2;
-                margin: 0;
-                padding: 0; 
+                width: 100%;
+                background-color:#F2F2F2; 
             }
 
             .contenu_footer{
-               max-width: 1460px;
-                margin: auto;              
+                width: 70%;
+                Margin: auto;
+                padding: 10px 0 100px;
                 display: flex;
                 flex-direction: row;
                 justify-content:space-around;
@@ -607,7 +577,7 @@ background-color: white;
             .footer_bloc_assistance h3{
                 font-size: 15px;
                 padding-bottom: 5px;
-                margin-left: 0;
+                margin-left: 15px;
             }
 
             .liste_a_propos,
@@ -637,7 +607,6 @@ background-color: white;
             .liste_assistance a{
             text-decoration: none;
             color: grey;
-            padding-left: 0;
             }
 
             li a:hover{
