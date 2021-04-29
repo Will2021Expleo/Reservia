@@ -7,8 +7,16 @@
     }
     
     #bloc_page{
-    background-color: white; /*couleur de fond*/
-    max-width: 100%
+    width: 100%;
+    margin: auto;
+    }
+
+    header, 
+    #section_1,
+    #section_2,
+    #section_3{
+        max-width: 100%;
+        margin: 0 0.5em 0 0.5em;
     }
 
     #section_1{
@@ -18,19 +26,19 @@
     .bloc_hebergements_populaires{
         display: flex;
         flex-direction: column-reverse;
-        
     }
+        
+    .bloc_contenu_hebergements{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .bloc_hebergements_populaires .bloc_hebergements{
         width: 100%;
     }
 
     .bloc_hebergements_populaires .bloc_texte_hebergements{
         margin-left: 2.2em;
-    }
-
-    .bloc_contenu_hebergements{
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 
     .bloc_hebergements_populaires .bloc_populaires{
@@ -43,7 +51,16 @@
     }
 
     .bloc_contenu_populaires{
-        flex-direction: row; 
+        margin: 0 2em;
+        flex-direction: row;
+         justify-content: space-around;
+    }
+
+    .bloc_description_article_populaires{
+      width: 100%;
+        margin: 0.5em;
+
+
     }
  
     .contenu_footer{

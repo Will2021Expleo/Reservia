@@ -121,6 +121,7 @@
     /*bloc populaires*/
    .bloc_contenu_populaires{
         flex-direction: column;
+        max-width: 100%;
     }
 
     .bloc_hebergements_populaires .bloc_populaires{
