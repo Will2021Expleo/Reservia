@@ -1,42 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
 /*adaptation du site à tout type de média dont l'écran est inférieur à 1024px*/
-@media all and (max-device-width: 1460px)
+@media screen and (max-device-width: 1460px)
 {
+    header{
+        max-width: 1091px;
+    }
+    
     #bloc_page{
     background-color: white; /*couleur de fond*/
-    width: 100%;
+    max-width: 100%
     }
 
     #section_1{
     flex-direction: column;
     }
 
-    .bloc_hebergements{       
-    width: 100%;
-    margin: 10px; 
+    .bloc_hebergements_populaires{
+        display: flex;
+        flex-direction: column-reverse;
+        
     }
-    
-    .footer_bloc_a_propos, .footer_bloc_hebergements, .footer_bloc_assistance{
-    width: 100%;
-    }
-
-    .bloc_hotel_description_hebergements{
-    flex-direction: row;
-    flex-wrap: wrap;
+    .bloc_hebergements_populaires .bloc_hebergements{
+        width: 100%;
     }
 
-    .bloc_description_detail_hebergements{
-    width: 45%;
+    .bloc_hebergements_populaires .bloc_texte_hebergements{
+        margin-left: 2.2em;
     }
 
+    .bloc_contenu_hebergements{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .bloc_hebergements_populaires .bloc_populaires{
+        width: 100%;
+        margin-bottom: 1em;    
+    }
+
+    .bloc_texte_haut_populaire {
+        margin: 0 1.5em;
+    }
+
+    .bloc_contenu_populaires{
+        flex-direction: row; 
+    }
+ 
     .contenu_footer{
         width: 100%;
-        Margin: auto;
-        padding: 10px 0 100px;
+        Margin:0.5em;
         display: flex;
         flex-direction: row;
         justify-content:space-around;
         align-items: flex-start;
         font-size: 15px;
+    }
+
+    .footer_bloc_a_propos, .footer_bloc_hebergements, .footer_bloc_assistance{
+        width: 100%;
     }
 }
