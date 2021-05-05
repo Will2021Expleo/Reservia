@@ -186,11 +186,10 @@ header #big_media{
     margin-left: 10px;
     padding-right: 15px;
     height: 3.8em;
-    
 }
 
-.filters :hover{
-    background-color: #DEEBFF;  
+.text_filter:hover{
+    background-color: #DEEBFF;
     cursor: cell;
 }
 
