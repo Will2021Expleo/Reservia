@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
 /*adaptation du site à tout type de média dont l'écran est inférieur à 1024px*/
-@media screen and (max-device-width: 1460px)
+@media screen and (max-width: 1460px)
 {
+    header{
+        max-width: 1091px;
+    }
+    
     #bloc_page{
-    background-color: white; /*couleur de fond*/
     width: 100%;
+    margin: auto;
+    }
+
+    header, 
+    #section_1,
+    #section_2,
+    #section_3{
+        max-width: 100%;
+        margin: 0 0.5em 0 0.5em;
     }
 
     #section_1{
@@ -15,46 +27,43 @@
         display: flex;
         flex-direction: column-reverse;
     }
+        
+    .bloc_contenu_hebergements{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .bloc_hebergements_populaires .bloc_hebergements{
         width: 100%;
     }
 
-    .bloc_hotel_description_hebergements{
-    flex-direction: row;
-    flex-wrap: wrap;
+    .bloc_hebergements_populaires .bloc_texte_hebergements{
+        margin-left: 2.2em;
     }
 
-    .bloc_description_detail_hebergements{
-        width: 30%;
-    }
     .bloc_hebergements_populaires .bloc_populaires{
         width: 100%;
-        margin: 0;
+        margin-bottom: 1em;    
+    }
+
+    .bloc_texte_haut_populaire {
+        margin: 0 1.5em;
     }
 
     .bloc_contenu_populaires{
-        
-        padding: 0;
-        background-color: aqua;
-        max-width: 100%;
-        display: flex;
+        margin: 0 2em;
         flex-direction: row;
-        margin: 0 1em 1em 2em;
-        padding: 0;
+         justify-content: space-around;
     }
 
-  .bloc_description_article_populaires{
-      width: 31%;
-      margin: 0.5em ;
-  }
-
-
-
-
+    .bloc_description_article_populaires{
+      width: 100%;
+        margin: 0.5em;
+    }
+ 
     .contenu_footer{
         width: 100%;
-        Margin: auto;
-        
+        Margin:0.5em;
         display: flex;
         flex-direction: row;
         justify-content:space-around;
@@ -64,5 +73,5 @@
 
     .footer_bloc_a_propos, .footer_bloc_hebergements, .footer_bloc_assistance{
         width: 100%;
-        }
+    }
 }
