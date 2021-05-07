@@ -364,7 +364,7 @@ header #big_media{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
+    align-items: space-around;
 }
 
 .bloc_texte_haut_populaire{                        
@@ -520,11 +520,12 @@ background-color: white;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
+    align-items: space-between;
 }
 
 .bloc_2_article_1{
     background-color: white;
-   
+    max-width: auto;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -544,6 +545,7 @@ background-color: white;
 
 .bloc_2_article_2{
     background-color: white;
+    max-width: auto;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -674,13 +676,14 @@ footer{
     list-style-type: none;
     margin-left: 0rem;
     padding: 0px;
-
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
 }
 
 .liste_a_propos ul,
 .liste_hebergements ul,
 .liste_assistance ul{
-    margin: 0px;
+    margin-block-start: 0px;
 }
 
 .liste_a_propos li,

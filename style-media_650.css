@@ -15,24 +15,30 @@
     }
 
     #header_big_media{
+        display: none;
+    }
+
+    #header_small_media{
         max-width: 100%;
         display: flex;
         flex-direction: column;
         margin-bottom: 2em;
     }
 
-    .link_navigation{
+    /*header petit média*/
+	#nav_head1{
+        display: flex;
         flex-direction: row;
         position: relative;
       top: 3em;
     }
 
-    .link_navigation .link{
-        position: re;
-        left: 50%, 50%;
+    #nav_head2{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 2em 0 2em 0;
     }
-   
-
 
     .hebergement_link,
     .activity_link{
