@@ -2,33 +2,20 @@
 /*adaptation du site à tout type de média dont l'écran est inférieur à 1024px*/
 @media screen and (max-width: 1460px)
 {
-    header{
-        max-width: 1091px;
-    }
-    
-    #bloc_page{
-    width: 100%;
-    margin: auto;
-    }
 
-    header, 
-    #section_1,
-    #section_2,
-    #section_3{
+    body{
         max-width: 100%;
-        margin: 0 0.5em 0 0.5em;
     }
 
-    #section_1{
-    flex-direction: column;
-    }
 
     .bloc_hebergements_populaires{
+        max-width: 100%;
         display: flex;
         flex-direction: column-reverse;
     }
         
     .bloc_contenu_hebergements{
+        margin-left: 0;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -38,7 +25,7 @@
     }
 
     .bloc_hebergements_populaires .bloc_texte_hebergements{
-        margin-left: 2.2em;
+        margin-left: 0;
     }
 
     .bloc_hebergements_populaires .bloc_populaires{
@@ -46,24 +33,31 @@
         margin-bottom: 1em;    
     }
 
+    .bloc_contenu_populaires{
+        margin: 0;
+    }
+
     .bloc_texte_haut_populaire {
-        margin: 0 1.5em;
+        margin: 0;
     }
 
     .bloc_contenu_populaires{
-        margin: 0 2em;
+        margin-bottom: 1em;
         flex-direction: row;
          justify-content: space-around;
     }
 
     .bloc_description_article_populaires{
-      width: 100%;
+      max-width: 100%;
         margin: 0.5em;
     }
  
+    .bloc_detail_populaires{
+        max-width: 100%;
+    }
     .contenu_footer{
         width: 100%;
-        Margin:0.5em;
+        
         display: flex;
         flex-direction: row;
         justify-content:space-around;

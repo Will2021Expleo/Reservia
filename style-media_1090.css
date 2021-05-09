@@ -23,7 +23,7 @@
         font-size: 12px;
         max-width: 100%;
         height: 3em; 
-        margin: 5px;
+        margin: 0;
         padding: 0;
         display: flex;
         flex-direction: row;   
@@ -37,7 +37,7 @@
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         width: 3em;
-        height: 2.7em;
+        height: 2.8em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,7 +48,7 @@
         border-radius: 10px;
         background-color: #0065FC;
         width: 3em;
-        height: 2.6em;
+        height: 2.5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -67,7 +67,7 @@
     }
 
     .input_search{
-        background-color:white;
+        
         width: auto;
         display: flex;
         justify-content: center;
@@ -75,6 +75,7 @@
         flex-direction: row;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        border-right: none;
         height: 2.6em;
     }
 
@@ -144,7 +145,7 @@
     /*bloc activités*/
     .bloc_activity{
         width: 100%;
-        margin: auto;
+        margin: 0 0 1em 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -172,8 +173,7 @@
     /*footer*/
     .contenu_footer{
         width: 100%;
-        Margin: 0.5em;
-        padding: 10px 0 100px;
+        padding: 0;
         display: flex;
         flex-direction: row;
         justify-content:space-around;
