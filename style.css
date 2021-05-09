@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Raleway';    /*police*/
+    margin: 0;
 
 }
 
@@ -66,7 +67,7 @@ header #big_media{
     text-decoration: none;
    color: black;
     font-weight: 500;
-    padding-top: 30px;
+    padding-top: 22px;
     
     margin: 1.5em;
     font-size: 16px;
@@ -394,7 +395,7 @@ header #big_media{
     text-decoration: none;
 }
 
-.bloc_description_article_populaires{
+.bloc_description_article_populaires a{
 background-color: white;
     max-width: 100%;
     margin: 1em;
@@ -649,7 +650,7 @@ footer{
 
 .contenu_footer{
     max-width: 1460px;
-    margin: 0;    
+    margin: auto;    
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -700,6 +701,7 @@ footer{
 text-decoration: none;
 color: grey;
 padding-left: 0;
+margin-left: 0;
 }
 
 li a:hover{

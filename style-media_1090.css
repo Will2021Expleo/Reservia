@@ -1,37 +1,37 @@
-@media screen and (max-width: 1090px)
-{
+@media screen and (max-width: 1090px) {
 
-    #bloc_page{
+    #bloc_page {
         width: 100%;
         margin: auto;
     }
 
-    header, 
+    header,
     #section_1,
     #section_2,
-    #section_3{
+    #section_3 {
         max-width: 100%;
         margin: 0 0.5em 0 0.5em;
     }
 
-    .search_form form, #big_media{ 
+    .search_form form,
+    #big_media {
         display: none;
     }
 
     /*formulaire de recherche version petit média*/
-    .search_form_small_media form{
+    .search_form_small_media form {
         font-size: 12px;
         max-width: 100%;
-        height: 3em; 
+        height: 3em;
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: row;   
+        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
     }
 
-    .search_form_small_media .fas{
+    .search_form_small_media .fas {
         background-color: #F2F2F2;
         border: 0px solid black;
         border-top-left-radius: 10px;
@@ -43,7 +43,7 @@
         align-items: center;
     }
 
-    .search_form_small_media .fa{
+    .search_form_small_media .fa {
         border: 0 solid #0065FC;
         border-radius: 10px;
         background-color: #0065FC;
@@ -54,11 +54,11 @@
         align-items: center;
     }
 
-    .search_form_small_media input{
+    .search_form_small_media input {
         border: none;
     }
 
-    .search_form_small_media .submit{
+    .search_form_small_media .submit {
         width: 10em;
         height: 2.6em;
         border: 1px solid #0065FC;
@@ -66,8 +66,8 @@
         border-bottom-right-radius: 10px;
     }
 
-    .input_search{
-        
+    .input_search {
+
         width: auto;
         display: flex;
         justify-content: center;
@@ -79,7 +79,7 @@
         height: 2.6em;
     }
 
-    .search_button{
+    .search_button {
         padding: 0;
         margin: 0;
         border: none;
@@ -87,63 +87,65 @@
     }
 
     /* /*zone de filtres */
-    .filters{
+    .filters {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .filter_title{
+    .filter_title {
         width: 100%;
         margin: 1em;
     }
-     .filters .text_filter{
+
+    .filters .text_filter {
         margin-bottom: 0.8em;
     }
 
     /*bloc hebergements populaires*/
-    .bloc_hebergements_populaires{
+    .bloc_hebergements_populaires {
         max-width: 100%;
         margin: 0.5em;
         display: flex;
         flex-direction: column-reverse;
     }
 
-   /*bloc hebergements */
-    .bloc_description_detail_hebergements{
+    /*bloc hebergements */
+    .bloc_description_detail_hebergements {
         width: 40%;
-        }
+    }
 
-    .bloc_hebergements_populaires .bloc_texte_hebergements{
+    .bloc_hebergements_populaires .bloc_texte_hebergements {
         max-width: 100%;
-        margin-left: 2.1em;
+        margin-left: 3.5em;
         padding: 0;
     }
 
     /*bloc populaires*/
-   .bloc_contenu_populaires{
+    .bloc_contenu_populaires {
         flex-direction: column;
         max-width: 100%;
     }
 
-    .bloc_hebergements_populaires .bloc_populaires{
+    .bloc_hebergements_populaires .bloc_populaires {
         flex-direction: column;
         margin-bottom: 1em;
         margin-right: 1em;
     }
 
-   .bloc_texte_haut_populaire{
+    .bloc_texte_haut_populaire {
         margin-left: 2.6em;
     }
 
-    .bloc_description_article_populaires{
-        max-width: 100%;
+    .bloc_description_article_populaires {
+        width: 100%;
         margin-bottom: 1em;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
     }
+
     /*bloc activités*/
-    .bloc_activity{
+    .bloc_activity {
         width: 100%;
         margin: 0 0 1em 0;
         display: flex;
@@ -151,12 +153,12 @@
         flex-wrap: wrap;
     }
 
-    .texte_bloc_activity{
-       width: 100%;
-       margin-left: 1.5em;
+    .texte_bloc_activity {
+        width: 100%;
+        margin-left: 1.5em;
     }
 
-    .bloc_principal_article_activities{
+    .bloc_principal_article_activities {
         width: 100%;
         flex-wrap: wrap;
     }
@@ -164,50 +166,21 @@
     .bloc_1_article_activity,
     .bloc_2_article_activity,
     .bloc_3_article_activity,
-    .bloc_4_article_activity{
+    .bloc_4_article_activity {
         width: 45%;
         height: auto;
         margin: auto;
     }
 
     /*footer*/
-    .contenu_footer{
+    .contenu_footer {
         width: 100%;
         padding: 0;
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        justify-content: space-around;
         align-items: flex-start;
         font-size: 15px;
     }
 
 }
-
-
-
-  
-    
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

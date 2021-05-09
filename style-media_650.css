@@ -26,7 +26,7 @@
         max-width: 100%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
     }
 
     /*header petit média*/
@@ -79,12 +79,12 @@
 
     /*bloc hébergements*/
 .bloc_hebergements_populaires{
-    max-width: 100%;
-    margin: 0;
+    width: 100%;
+    margin: 0 0 1em 0;
 }
     .bloc_hebergements{
         max-width: 100%;
-        margin: auto;
+        margin: 0;
  
     }
   
@@ -97,7 +97,7 @@
 
     .bloc_hebergements .bloc_description_detail_hebergements{
         width: 100%;
-        margin: auto;
+        margin: 0 0 0.5em 0;
     }
     
     .bloc_hebergements .bloc_texte_hebergements{
@@ -110,26 +110,26 @@
     /*bloc populaires*/
     .bloc_hebergements_populaires .bloc_populaires{
         max-width: 100%;
-        margin: 0;
+        margin: 0 0 1em 0;
     }
 
     .bloc_populaires .bloc_contenu_populaires{
         flex-direction: column;
         margin: 0;
         justify-content: center;
-        max-width: 100%;
-        margin: 0.5em;
+        width: 100%;
+        
         padding: 0;
     }
 
     .bloc_populaires .bloc_texte_haut_populaire{
         max-width: 100%;
-        margin: 0.5em 0 0em 0.7em;
+        margin: 0.5em 1em 0 0.7em;
     }
 
     .bloc_populaires .bloc_description_article_populaires{
-        max-width: 100%;
-        margin: 0 1em 0.5em 0;
+        width: 100%;
+        margin: 0;
     
     }
     .bloc_populaires .bloc_detail_populaires{
@@ -139,9 +139,13 @@
     /*bloc activtés*/
     .bloc_activity{
         max-width: 100%;
-        margin: auto;
+        margin: 0 0 1em 0;
         display: flex;
         flex-direction: column;
+    }
+
+    .texte_bloc_activity{
+        width: 100%;
     }
 
     .bloc_principal_article_activities{
@@ -155,7 +159,7 @@
     .bloc_3_article_activity,
     .bloc_4_article_activity{
         width: 100%;
-        margin: auto;
+        margin: 0;
     }
 
      .image_bloc_1_article_activity,
